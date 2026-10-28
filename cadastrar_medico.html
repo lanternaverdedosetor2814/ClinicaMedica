@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar Médico - Clínica Médica</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 20px; line-height: 1.6;">
+
+    <h2>Cadastrar Médico</h2>
+    <hr>
+    
+    <!-- O atributo action agora aponta para o script PHP de cadastro -->
+    <form action="processa_cadastrar_medico.php" method="POST">
+        <label>CRM:</label><br>
+        <input type="text" name="crm" placeholder="Ex: 123456/SP" required><br><br>
+
+        <label>Nome do Médico:</label><br>
+        <input type="text" name="nome" placeholder="Nome completo" required><br><br>
+
+        <label>Especialidade:</label><br>
+        <input type="text" name="especialidade" placeholder="Ex: Cardiologia" required><br><br>
+
+        <button type="submit">Salvar Cadastramento</button>
+        <button type="reset">Limpar</button>
+    </form>
+
+    <br><br>
+    <a href="index.html">&larr; Voltar ao Menu Principal</a>
+
+</body>
+</html>
